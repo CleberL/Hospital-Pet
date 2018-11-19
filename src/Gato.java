@@ -5,7 +5,4 @@ public class Gato extends Animal {
 		super(nome);
 	}
 	
-	public void miar(){
-		System.out.println("MIAU!!");
-	}
 }

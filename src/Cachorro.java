@@ -5,7 +5,5 @@ public class Cachorro extends Animal{
 		super(nome);
 	}
 
-	public void latir() {
-		System.out.println("AU AU!!");
-	}
+
 }
