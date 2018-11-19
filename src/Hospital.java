@@ -4,11 +4,11 @@ public class Hospital {
 	
 	private ArrayList<Animal> internados = new ArrayList<Animal>();
 	
-	public void tosar() {
+	public void tosar(Animal a) {
 
 	}
 
-	public void darBanho() {
+	public void darBanho(Animal a) {
 
 	}
 
