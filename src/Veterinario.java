@@ -3,11 +3,11 @@ public class Veterinario {
 
 	private String nome;
 	private int atendimentos;
-	private float comissao;
-
+	private float salario;
 
 	public Veterinario(String nome) {
 		this.nome = nome;
+		this.salario = 5000;
 	}
 
 	public void internar(Animal a, Hospital b) {
@@ -41,7 +41,7 @@ public class Veterinario {
 			a.setVacinado(true);
 			System.out.println(a.getNome() + " foi vacinado");
 		}
-		
+
 		atendimentos++;
 	}
 
@@ -80,12 +80,20 @@ public class Veterinario {
 		return this.atendimentos;
 	}
 
-	public float getComissao() {
-		return comissao;
+	public void zerarAtendimentos() {
+		this.atendimentos = 0;
 	}
 
-	public void setComissao(float comissao) {
-		this.comissao = comissao;
+	public float getSalario() {
+		return salario;
+	}
+
+	public void restaurarSalario() {
+			this.salario = 5000;
+	}
+
+	public void creditarComissao(float comissao) {
+		this.salario += comissao;
 	}
 
 }

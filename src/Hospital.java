@@ -11,7 +11,9 @@ public class Hospital {
 	}
 	
 	public void pagarComissaoVeterinario(Veterinario v){
-		v.setComissao((float)(v.getAtendimentos() * 5f));
+		v.creditarComissao((float)(v.getAtendimentos() * 5f));
+		v.zerarAtendimentos();
+		System.out.println("Comissão paga");
 	}
 
 }
