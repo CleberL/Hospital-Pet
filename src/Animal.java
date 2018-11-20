@@ -2,6 +2,7 @@
 public class Animal {
 
 	private String nome;
+	private String raça;
 	private boolean doente;
 	private boolean vacinado;
 
@@ -29,6 +30,14 @@ public class Animal {
 
 	public boolean isDoente() {
 		return this.doente;
+	}
+
+	public String getRaça() {
+		return raça;
+	}
+
+	public void setRaça(String raça) {
+		this.raça = raça;
 	}
 
 }
