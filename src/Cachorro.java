@@ -24,9 +24,9 @@ public class Cachorro extends Animal {
 	public void adestrar() {
 		if(this.adestrado == false) {
 			this.adestrado = true;
-			System.out.println("Agora ele está comportado");
+			System.out.println("Agora ele está comportado!");
 		}else {
-			System.out.println("Seu cachorro já foi adestrado antes");
+			System.out.println("Seu cachorro já foi adestrado antes.");
 		}
 	}
 

@@ -22,6 +22,12 @@ public class Main {
 
 		v.consultar(a3);		
 		
+		v.medicar(a3);
+		v.vacinar(a3);
+		
+		v.consultar(a3);
+		
+		
 		upe.pagarComissaoVeterinario(v);
 	}
 
