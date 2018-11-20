@@ -11,6 +11,8 @@ public class Main {
 		
 		Veterinario v = new Veterinario("adriano");
 		
+		upe.inserirVeterinario(v);
+		
 		
 		if (a1 instanceof Cachorro) {
 			((Cachorro) a1).adestrar();
@@ -28,7 +30,7 @@ public class Main {
 		v.consultar(a3);
 		
 		
-		upe.pagarComissaoVeterinario(v);
+		upe.pagarComissaoVeterinarios();
 	}
 
 }
