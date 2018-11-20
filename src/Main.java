@@ -2,20 +2,27 @@
 public class Main {
 
 	public static void main(String[] args) {
-		Animal matheus = new Cachorro("matheus");
-
+		
 		Hospital upe = new Hospital();
 		
-		if (matheus instanceof Cachorro) {
-			((Cachorro) matheus).adestrar();
+		Animal a1 = new Cachorro("toto");
+		Animal a2 = new Gato("nik", 12);
+		Animal a3 = new Gato("pingo", 6);
+		
+		Veterinario v = new Veterinario("adriano");
+		
+		
+		if (a1 instanceof Cachorro) {
+			((Cachorro) a1).adestrar();
 		}
 		
-		if (matheus instanceof Gato) {
-			((Gato) matheus).miar();
+		if (a2 instanceof Gato) {
+			((Gato) a2).miar();
 		}
-		
-		
 
+		v.consultar(a3);		
+		
+		upe.pagarComissaoVeterinario(v);
 	}
 
 }

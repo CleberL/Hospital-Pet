@@ -11,7 +11,7 @@ public class Animal {
 		this.doente = true;
 		this.vacinado = false;
 	}
-
+	
 	public String getNome() {
 		return nome;
 	}
